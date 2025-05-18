@@ -10,7 +10,7 @@ def countNums(nums):
 def twoDimArray(nums):
     if not nums:
         return []
-    count = dict(countNums(nums))
+    count = countNums(nums)
     twodim = [[] for _ in range (max(count.values()))]
     for value, frequency in count.items():
         for row in range(frequency):
